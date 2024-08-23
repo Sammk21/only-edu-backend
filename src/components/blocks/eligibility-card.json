@@ -1,0 +1,35 @@
+{
+  "collectionName": "components_blocks_eligibility_cards",
+  "info": {
+    "displayName": "Eligibility Card",
+    "icon": "check",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.header",
+      "required": true
+    },
+    "criteriaTable": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "light"
+      },
+      "customField": "plugin::ckeditor.CKEditor",
+      "required": false
+    },
+    "criteriaList": {
+      "displayName": "criteriaList",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.criteria-list",
+      "required": true,
+      "max": 4,
+      "min": 1
+    }
+  }
+}

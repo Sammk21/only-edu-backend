@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_blocks_tcs",
+  "info": {
+    "displayName": "tc",
+    "icon": "bulletList"
+  },
+  "options": {},
+  "attributes": {
+    "university": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::university.university"
+    }
+  }
+}

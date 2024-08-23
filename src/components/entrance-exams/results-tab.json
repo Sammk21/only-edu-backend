@@ -1,0 +1,34 @@
+{
+  "collectionName": "components_entrance_exams_results_tabs",
+  "info": {
+    "displayName": "resultsTab",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "resultDates": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.overview",
+      "required": true
+    },
+    "checkResult": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.overview",
+      "required": true
+    },
+    "percentCalculate": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.overview",
+      "required": true
+    },
+    "normalizationProcess": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.overview",
+      "required": true
+    }
+  }
+}

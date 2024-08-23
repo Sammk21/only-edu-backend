@@ -1,0 +1,20 @@
+{
+  "collectionName": "components_global_explores",
+  "info": {
+    "displayName": "explore",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.header"
+    },
+    "list": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.criteria-list"
+    }
+  }
+}

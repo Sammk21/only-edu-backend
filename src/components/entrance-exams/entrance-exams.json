@@ -1,0 +1,58 @@
+{
+  "collectionName": "components_entrance_exams_entrance_exams",
+  "info": {
+    "displayName": "overviewTabs",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "latestupdates": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.overview",
+      "required": true
+    },
+    "overview": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.overview",
+      "required": true
+    },
+    "highlights": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.overview",
+      "required": true
+    },
+    "eligibilitycriteria": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.overview",
+      "required": true
+    },
+    "exampattern": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.overview",
+      "required": true
+    },
+    "ImpExamDates": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.overview",
+      "required": true
+    },
+    "prepTips": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.overview",
+      "required": true
+    },
+    "prepBooks": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.overview",
+      "required": true
+    }
+  }
+}

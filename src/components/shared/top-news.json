@@ -1,0 +1,14 @@
+{
+  "collectionName": "components_shared_top_news",
+  "info": {
+    "displayName": "Top News"
+  },
+  "options": {},
+  "attributes": {
+    "news": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::new.new"
+    }
+  }
+}

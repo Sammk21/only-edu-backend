@@ -1,0 +1,15 @@
+{
+  "collectionName": "components_shared_university_cards",
+  "info": {
+    "displayName": "UniversityCard",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "universities": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::university.university"
+    }
+  }
+}

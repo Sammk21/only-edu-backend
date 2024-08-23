@@ -1,0 +1,204 @@
+{
+  "kind": "collectionType",
+  "collectionName": "universities",
+  "info": {
+    "singularName": "university",
+    "pluralName": "universities",
+    "displayName": "University",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "required": true,
+      "targetField": "title"
+    },
+    "universityProfile": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.profiles",
+      "required": true
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.cta",
+      "required": false
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.faq",
+      "required": true
+    },
+    "countries": {
+      "type": "relation",
+      "relation": "oneToMany",
+      "target": "api::country.country",
+      "mappedBy": "university"
+    },
+    "noOfStudentsStudying": {
+      "type": "string",
+      "required": false
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo",
+      "required": false
+    },
+    "authorName": {
+      "type": "enumeration",
+      "enum": [
+        "Omkar",
+        "Sam",
+        "Sarfraj",
+        "Adesh",
+        "Dhanashree",
+        "Afreen",
+        "Ketkki",
+        "Premita",
+        "Yogita",
+        "Zhankana",
+        "Parveen",
+        "Dweep",
+        "Raviraj"
+      ],
+      "required": true
+    },
+    "ownership": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::ownership.ownership"
+    },
+    "searchableImage": {
+      "type": "media",
+      "multiple": false,
+      "required": false,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "indian_state": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::indian-state.indian-state",
+      "inversedBy": "universities"
+    },
+    "overviewTabs": {
+      "displayName": "Overview Tabs",
+      "type": "component",
+      "repeatable": false,
+      "component": "university.overview-tabs",
+      "required": true
+    },
+    "coursesFees": {
+      "displayName": "coursesFees",
+      "type": "component",
+      "repeatable": false,
+      "component": "university.courses-fees",
+      "required": true
+    },
+    "admission": {
+      "displayName": "admission",
+      "type": "component",
+      "repeatable": false,
+      "component": "university.admission",
+      "required": true
+    },
+    "placements": {
+      "displayName": "placements",
+      "type": "component",
+      "repeatable": false,
+      "component": "university.placements",
+      "required": true
+    },
+    "gallery": {
+      "displayName": "gallery",
+      "type": "component",
+      "repeatable": false,
+      "component": "university.gallery",
+      "required": true
+    },
+    "faculty": {
+      "displayName": "faculty",
+      "type": "component",
+      "repeatable": false,
+      "component": "university.faculty",
+      "required": true
+    },
+    "hostel": {
+      "displayName": "hostel",
+      "type": "component",
+      "repeatable": false,
+      "component": "university.hostel",
+      "required": true
+    },
+    "scholarships": {
+      "displayName": "scholarships",
+      "type": "component",
+      "repeatable": false,
+      "component": "university.scholarships",
+      "required": true
+    },
+    "city": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::city.city",
+      "inversedBy": "university"
+    },
+    "streams": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::stream.stream",
+      "mappedBy": "universities"
+    },
+    "rankingCourses": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.ranking-component"
+    },
+    "rankingStreams": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.ranking-streams"
+    },
+    "collegeCourseManager": {
+      "type": "component",
+      "repeatable": true,
+      "component": "university.college-course-manager"
+    },
+    "affiliatedMan": {
+      "displayName": "AffiM",
+      "type": "component",
+      "repeatable": false,
+      "component": "university.affi-m"
+    },
+    "entrance_exams": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::entrance-exam.entrance-exam",
+      "inversedBy": "universities"
+    },
+    "courses": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::course.course",
+      "mappedBy": "universities"
+    },
+    "fullForm": {
+      "type": "string"
+    }
+  }
+}

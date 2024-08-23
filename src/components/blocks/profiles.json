@@ -1,0 +1,58 @@
+{
+  "collectionName": "components_blocks_profiles",
+  "info": {
+    "displayName": "Profiles",
+    "icon": "eye",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "backgroundImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "profileImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "name": {
+      "type": "string",
+      "required": true,
+      "minLength": 2
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "minLength": 100
+    },
+    "avgPackage": {
+      "type": "string"
+    },
+    "fees": {
+      "type": "decimal"
+    },
+    "location": {
+      "type": "string"
+    },
+    "Approvedby": {
+      "type": "string"
+    },
+    "establishment": {
+      "type": "string"
+    }
+  }
+}

@@ -1,0 +1,23 @@
+{
+  "collectionName": "components_slices_ctas",
+  "info": {
+    "displayName": "cta",
+    "icon": "bullhorn",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "theme": {
+      "type": "enumeration",
+      "enum": [
+        "primary",
+        "secondary",
+        "muted"
+      ],
+      "default": "muted"
+    },
+    "title": {
+      "type": "string"
+    }
+  }
+}

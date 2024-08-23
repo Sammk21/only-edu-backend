@@ -1,0 +1,47 @@
+{
+  "kind": "singleType",
+  "collectionName": "study_abroads",
+  "info": {
+    "singularName": "study-abroad",
+    "pluralName": "study-abroads",
+    "displayName": "study-abroad",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "description": {
+      "type": "text"
+    },
+    "eligibilityTable": {
+      "type": "component",
+      "repeatable": true,
+      "component": "blocks.eligibility-table"
+    },
+    "whyAbroad": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.why-us"
+    },
+    "popularCourses": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.popular-courses"
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.faq"
+    },
+    "topUniversities": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.features-with-images"
+    }
+  }
+}

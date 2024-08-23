@@ -1,0 +1,17 @@
+{
+  "collectionName": "components_shared_rankings",
+  "info": {
+    "displayName": "ranking",
+    "icon": "filter",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "objectRank": {
+      "type": "string"
+    },
+    "worldRank": {
+      "type": "string"
+    }
+  }
+}

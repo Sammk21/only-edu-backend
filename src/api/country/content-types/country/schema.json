@@ -1,0 +1,95 @@
+{
+  "kind": "collectionType",
+  "collectionName": "countries",
+  "info": {
+    "singularName": "country",
+    "pluralName": "countries",
+    "displayName": "Country",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "countryProfile": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.profiles"
+    },
+    "whyThisCountry": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.why-abroad",
+      "required": true
+    },
+    "eligibilityCriteria": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.eligibility-card"
+    },
+    "feesStructure": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.eligibility-table"
+    },
+    "topUniversitiesInCountry": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.features-with-images"
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.faq"
+    },
+    "university": {
+      "type": "relation",
+      "relation": "manyToOne",
+      "target": "api::university.university",
+      "inversedBy": "countries"
+    },
+    "noOfStudentsStudying": {
+      "type": "string"
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "authorName": {
+      "type": "enumeration",
+      "enum": [
+        "Omkar",
+        "Sam",
+        "Sarfraj",
+        "Adesh",
+        "Dhanashree",
+        "Afreen",
+        "Ketkki",
+        "Premita",
+        "Yogita",
+        "Zhankana",
+        "Parveen"
+      ],
+      "required": true
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.cta"
+    },
+    "overview": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.header"
+    }
+  }
+}

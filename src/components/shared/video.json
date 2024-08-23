@@ -1,0 +1,26 @@
+{
+  "collectionName": "components_shared_videos",
+  "info": {
+    "displayName": "video"
+  },
+  "options": {},
+  "attributes": {
+    "mainVideo": {
+      "type": "customField",
+      "options": {
+        "output": "HTML",
+        "preset": "rich"
+      },
+      "customField": "plugin::ckeditor.CKEditor"
+    },
+    "sideBarVideo": {
+      "displayName": "sideBarVideo",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.side-bar-video"
+    },
+    "videoTitle": {
+      "type": "string"
+    }
+  }
+}

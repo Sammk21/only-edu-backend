@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_blocks_why_abroads",
+  "info": {
+    "displayName": "Why Abroad",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "header": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.header",
+      "required": true
+    },
+    "qna": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.why-this-uni-country"
+    }
+  }
+}

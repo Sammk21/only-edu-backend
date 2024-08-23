@@ -1,0 +1,12 @@
+{
+  "collectionName": "components_university_courser_and_fees",
+  "info": {
+    "displayName": "courserAndFees"
+  },
+  "options": {},
+  "attributes": {
+    "courseFee": {
+      "type": "decimal"
+    }
+  }
+}

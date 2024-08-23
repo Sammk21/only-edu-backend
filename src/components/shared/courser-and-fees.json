@@ -1,0 +1,16 @@
+{
+  "collectionName": "components_shared_courser_and_fees",
+  "info": {
+    "displayName": "courserAndFees",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "fees": {
+      "type": "decimal"
+    },
+    "courseSpecializationFirstYearFees": {
+      "type": "decimal"
+    }
+  }
+}

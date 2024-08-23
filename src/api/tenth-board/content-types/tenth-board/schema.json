@@ -1,0 +1,36 @@
+{
+  "kind": "collectionType",
+  "collectionName": "tenth_boards",
+  "info": {
+    "singularName": "tenth-board",
+    "pluralName": "tenth-boards",
+    "displayName": "Tenth Board",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string"
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title"
+    },
+    "fullForm": {
+      "type": "string"
+    },
+    "image": {
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ],
+      "type": "media",
+      "multiple": false
+    }
+  }
+}

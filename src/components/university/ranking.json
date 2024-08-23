@@ -1,0 +1,21 @@
+{
+  "collectionName": "components_university_rankings",
+  "info": {
+    "displayName": "Ranking",
+    "description": ""
+  },
+  "options": {},
+  "attributes": {
+    "rankinngCourse": {
+      "displayName": "Ranking Component ",
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.ranking-component"
+    },
+    "rankingStreams": {
+      "type": "component",
+      "repeatable": true,
+      "component": "shared.ranking-streams"
+    }
+  }
+}

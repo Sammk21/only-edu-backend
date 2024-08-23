@@ -1,0 +1,149 @@
+{
+  "kind": "collectionType",
+  "collectionName": "entrance_exams",
+  "info": {
+    "singularName": "entrance-exam",
+    "pluralName": "entrance-exams",
+    "displayName": "Entrance-exam",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "title": {
+      "type": "string",
+      "required": true
+    },
+    "slug": {
+      "type": "uid",
+      "targetField": "title",
+      "required": true
+    },
+    "cta": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.cta",
+      "required": true
+    },
+    "faq": {
+      "type": "component",
+      "repeatable": false,
+      "component": "blocks.faq",
+      "required": true
+    },
+    "seo": {
+      "type": "component",
+      "repeatable": false,
+      "component": "shared.seo"
+    },
+    "authorName": {
+      "type": "enumeration",
+      "enum": [
+        "Garima",
+        "Omkar",
+        "Sam",
+        "Sarfraj",
+        "Adesh",
+        "Dhanashree",
+        "Afreen",
+        "Ketkki",
+        "Premita",
+        "Yogita",
+        "Zhankana",
+        "Parveen",
+        "Dweep",
+        "Raviraj"
+      ],
+      "required": true
+    },
+    "overviewTabs": {
+      "displayName": "Entrance-Exams",
+      "type": "component",
+      "repeatable": false,
+      "component": "entrance-exams.entrance-exams"
+    },
+    "resultsTab": {
+      "displayName": "resultsTab",
+      "type": "component",
+      "repeatable": false,
+      "component": "entrance-exams.results-tab"
+    },
+    "cutoff": {
+      "displayName": "cutoff",
+      "type": "component",
+      "repeatable": false,
+      "component": "entrance-exams.cutoff"
+    },
+    "previousPapers": {
+      "displayName": "previousPapers",
+      "type": "component",
+      "repeatable": true,
+      "component": "entrance-exams.previous-papers",
+
+      "required": false
+    },
+    "stream": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::stream.stream"
+    },
+    "searchableImage": {
+      "type": "media",
+      "multiple": false,
+      "required": true,
+      "allowedTypes": [
+        "images",
+        "files",
+        "videos",
+        "audios"
+      ]
+    },
+    "mode": {
+      "type": "relation",
+      "relation": "oneToOne",
+      "target": "api::mode.mode"
+    },
+    "applicationDate": {
+      "type": "date"
+    },
+    "examinationDate": {
+      "type": "date"
+    },
+    "resultDate": {
+      "type": "date"
+    },
+    "streams": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::stream.stream",
+      "mappedBy": "entrance_exams"
+    },
+    "fullForm": {
+      "type": "string",
+      "required": true
+    },
+    "universities": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "api::university.university",
+      "mappedBy": "entrance_exams"
+    },
+    "examlevel": {
+      "type": "enumeration",
+      "enum": [
+
+        "National",
+        "International",
+        "Autonomous"
+
+      ]
+    },
+    "description": {
+      "type": "text",
+      "required": true,
+      "minLength": 120
+    }
+  }
+}
